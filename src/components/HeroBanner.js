@@ -1,20 +1,22 @@
 import React from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
 
-import HeroBannerImage from "../assets/images/banner.png";
+import HeroBannerImage from "../assets/images/banner.jpg"
 
 const HeroBanner = () => {
   return (
     <Box
+    
       sx={{
-        mt: { lg: "212px", xs: "70px" },
+        mt: { lg: "150px", xs: "70px" },
         ml: { sm: "50px" },
+        justifyContent: {sm:"start", xs:"center"}
       }}
       position="relative"
       p="20px"
     >
       <Typography color="#FF2625" fontWeight="600" fontSize="26px">
-        Fitness Club
+        Base Programming
       </Typography>
       <Typography
         fontWeight={700}
@@ -22,10 +24,10 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
       >
-        Sweat, Smile <br /> and Repeat
+        Train, Sleep, Eat <br /> and Repeat
       </Typography>
       <Typography fontSize="20px" lineHeight={"35px"} mb={4}>
-        Check out the most effective exercises
+        Check out a sample of exercises
       </Typography>
       <Button
         variant="contained"
@@ -42,11 +44,12 @@ const HeroBanner = () => {
           opacity: 0.1,
           display: { lg: "block", xs: "none" },
         }}
-        fontSize="200px"
+              fontSize="90px"
+        mt="20px"
       >
-        Exercise
+        Build your Base
       </Typography>
-      <img src={HeroBannerImage} alt="Banner" className="hero-banner-img" />
+      <img src={HeroBannerImage} alt="Banner" className="hero-banner-img"/>
     </Box>
   );
 };

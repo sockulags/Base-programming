@@ -7,7 +7,7 @@ const pdf = {
   height: "29.7cm",
   padding: "1cm"
   },
-  headLine: {
+  header: {
 fontSize: "48px",
 marginLeft: "48px",
 marginTop: "48px",
@@ -28,7 +28,7 @@ export class WorkoutPDF extends React.PureComponent {
   render() {
     return (
       <div style={pdf.size}>
-        <div style={pdf.headLine}>This is a headline</div>
+        <div style={pdf.header}>This is a headline</div>
           <div>Text här</div>
         
       </div>

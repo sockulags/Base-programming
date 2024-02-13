@@ -11,10 +11,9 @@ const Excercises = ({ exercises, setExercises, bodyPart }) => {
 
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
-    indexOfFirstExercise,
-    indexOfLastExercise
-  );
+  const currentExercises = exercises && exercises.length > 0
+  ? exercises.slice(indexOfFirstExercise, indexOfLastExercise)
+  : [];
 
   const paginate = (e, value) => {
     setCurrentPage(value);
@@ -40,7 +39,7 @@ const Excercises = ({ exercises, setExercises, bodyPart }) => {
       setExercises(exercisesData);
     };
     fetchExercisesData();
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
 
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">

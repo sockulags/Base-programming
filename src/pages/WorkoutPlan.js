@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Stack, Link } from "@mui/material";
+import { Box, Stack, } from "@mui/material";
 import HandlePrint from "../components/HandlePrint";
 import CreateWorkout from "../components/CreateWorkout";
 

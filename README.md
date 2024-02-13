@@ -1,5 +1,10 @@
 # Base Programming - Fitness and Workout Planner
 
+## Preview
+Link to preview: [Base programming](https://sockulags.github.io/Base-programming/)
+Issues: Limit/get request has been set to 10 since I built this, so the search function is fairly limited. Try navigating through the body parts just below to see how it works, and click on any exercise to see more.
+
+
 ## Overview
 Base Programming is a comprehensive fitness and workout planner web application designed to help users create personalized workout plans, track exercises, and view exercise videos. Built with modern web technologies, this application aims to provide an intuitive and engaging platform for fitness enthusiasts of all levels.
 

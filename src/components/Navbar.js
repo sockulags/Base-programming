@@ -18,7 +18,7 @@ const Navbar = () => {
         >
 
             <Stack direction="row" sx={{gap:{ sm:"40px", xs: "20px"}, fontSize:{md:"24px", sm: "20px", xs:"18px"}}}alignItems="center">
-                <Link to="/Base-programming/">
+                <Link to="/">
                     <img
                         src={Logo}
                         alt="logo"
@@ -26,7 +26,7 @@ const Navbar = () => {
                     />
                 </Link>
                 <Link
-                    to="/Base-programming/"
+                    to="/"
                     style={{
                         textDecoration: "none",
                         color: "3A1212",
